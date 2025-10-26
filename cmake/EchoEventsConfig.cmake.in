@@ -1,0 +1,18 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/EchoEventsTarget.cmake")
+
+check_required_component(EchoEvents)
+
+if (NOT EchoEvents_FIND_COMPONENT)
+
+    set(EchoEvents_FIND_COMPONENT Events)
+
+endif()
+
+if(NOT EchoEvents_FIND_QUIETLY)
+
+    message(STATUS "EchoEvents found - Version @PROJECT_VERSION@")
+    message(STATUS "    Echo::Events - Main events library")
+
+endif()

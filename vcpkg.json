@@ -1,0 +1,21 @@
+{
+    "name": "echo",
+    "version": "0.0.1",
+    "description": "Modern C++ Game Engine",
+    "homepage": "https://github.com/GuillaumeIsCoding/Echo",
+    "documentation": "https://github.com/GuillaumeIsCoding/Echo/wiki",
+    "license": "MIT",
+    "dependencies": [],
+    "features": {
+        "testing": {
+            "description": "Build tests",
+            "dependencies": []
+        },
+        "docs": {
+            "description": "Build documentation",
+            "dependencies": [
+                "doxygen"
+            ]
+        }
+    }
+}
